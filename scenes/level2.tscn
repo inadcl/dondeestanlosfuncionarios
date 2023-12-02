@@ -1,0 +1,217 @@
+[gd_scene load_steps=19 format=3 uid="uid://dfke67hq7urhf"]
+
+[ext_resource type="Script" path="res://scenes/level2.gd" id="1_ca1qv"]
+[ext_resource type="AudioStream" uid="uid://7cvufa6jmofr" path="res://audio/music/TheAdventureBEGINS.wav" id="2_xm51j"]
+[ext_resource type="Texture2D" uid="uid://7b1a6aypu8um" path="res://images/level2/plazamayor.png" id="3_6vuxu"]
+[ext_resource type="Texture2D" uid="uid://cj8btfu7mbxlw" path="res://images/level2/funcionarios1.png" id="4_oj3bl"]
+[ext_resource type="Texture2D" uid="uid://b10u3dt0qortq" path="res://images/level2/funcionarios2.png" id="5_340cw"]
+[ext_resource type="Texture2D" uid="uid://dy02fde4c34og" path="res://images/level2/funcionarios3.png" id="6_k36vv"]
+[ext_resource type="Texture2D" uid="uid://dvgv4nlabso0m" path="res://images/level1/carta3.png" id="7_6hnej"]
+[ext_resource type="Texture2D" uid="uid://d36r7lj5slomy" path="res://images/level1/tiempo.png" id="8_js3xc"]
+[ext_resource type="Texture2D" uid="uid://dcfw0yv6b2w6i" path="res://images/avatars/narrador.png" id="9_exj87"]
+[ext_resource type="Script" path="res://scenes/Butonlevel2.gd" id="10_5cq01"]
+[ext_resource type="AudioStream" uid="uid://bq6vwiy8fsumg" path="res://audio/effects/meowing_cat.mp3" id="11_rp585"]
+[ext_resource type="AudioStream" uid="uid://b0dps0rypysmu" path="res://audio/effects/vgmenuhighlight.wav" id="12_kg8op"]
+[ext_resource type="Texture2D" uid="uid://cyculnh4t8ws2" path="res://images/items/taza2.webp" id="13_r4aej"]
+[ext_resource type="Texture2D" uid="uid://battmowvkvct7" path="res://images/items/starwarsposter.webp" id="14_oe0ak"]
+[ext_resource type="Texture2D" uid="uid://h8ribpjngdx1" path="res://images/items/trofeo.webp" id="15_0rwye"]
+
+[sub_resource type="GDScript" id="GDScript_o7yl8"]
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+"
+
+[sub_resource type="GDScript" id="GDScript_l4u6l"]
+script/source = "extends TextureButton
+
+var root = \"/root/level2/\"
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="GDScript" id="GDScript_n0w0e"]
+script/source = "extends TextureButton
+
+var root = \"/root/level2/\"
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+"
+
+[node name="level2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ca1qv")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_xm51j")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -388.0
+offset_top = -384.0
+offset_right = 636.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("3_6vuxu")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.0
+offset_right = 1148.0
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("4_oj3bl")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.0
+offset_right = 1148.0
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("5_340cw")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.21
+offset_right = 1148.21
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("6_k36vv")
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.21
+offset_right = 1148.21
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("7_6hnej")
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.21
+offset_right = 1148.21
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("8_js3xc")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(2.365, 4.32)
+layout_mode = 0
+offset_left = 290.935
+offset_top = 592.28
+offset_right = 887.4
+offset_bottom = 763.225
+
+[node name="TextureRect4" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = -167.165
+offset_top = 1.165
+offset_right = 856.835
+offset_bottom = 1025.17
+scale = Vector2(0.166, 0.164826)
+texture = ExtResource("9_exj87")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 25.0
+offset_right = 550.0
+offset_bottom = 150.0
+text = "¡Ah, Madrid! 
+Donde las tapas son gratis y los atascos eternos. 
+Desde que comenzó la pandemia, nuestro prota no ha salido mucho. "
+
+[node name="Buttonlevel2" type="Button" parent="."]
+layout_mode = 0
+offset_right = 1024.0
+offset_bottom = 768.0
+flat = true
+script = ExtResource("10_5cq01")
+
+[node name="mm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_rp585")
+
+[node name="action" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_kg8op")
+volume_db = 10.435
+
+[node name="cafe" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 547.985
+offset_top = 436.63
+offset_right = 1571.98
+offset_bottom = 1460.63
+scale = Vector2(0.02, 0.02)
+texture_normal = ExtResource("13_r4aej")
+script = SubResource("GDScript_o7yl8")
+
+[node name="poster" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 298.51
+offset_top = 330.465
+offset_right = 1322.51
+offset_bottom = 1354.46
+scale = Vector2(0.05, 0.05)
+texture_normal = ExtResource("14_oe0ak")
+script = SubResource("GDScript_l4u6l")
+
+[node name="premio" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 710.475
+offset_top = 401.835
+offset_right = 1734.47
+offset_bottom = 1425.83
+scale = Vector2(0.06, 0.06)
+texture_normal = ExtResource("15_0rwye")
+script = SubResource("GDScript_n0w0e")
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="button_up" from="Buttonlevel2" to="Buttonlevel2" method="_on_button_up"]
+[connection signal="button_up" from="cafe" to="." method="_on_button_up_cafe"]
+[connection signal="button_up" from="poster" to="." method="_on_button_up_poster"]
+[connection signal="button_up" from="premio" to="." method="_on_button_up_premio"]

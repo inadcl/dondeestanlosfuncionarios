@@ -1,0 +1,716 @@
+[gd_scene load_steps=71 format=3 uid="uid://k46oxuvaj6mt"]
+
+[ext_resource type="Script" path="res://scenes/Miniquienesquien.gd" id="1_jw25u"]
+[ext_resource type="AudioStream" uid="uid://7cvufa6jmofr" path="res://audio/music/TheAdventureBEGINS.wav" id="1_xis0f"]
+[ext_resource type="Texture2D" uid="uid://b64c700oytva2" path="res://images/quienesquien/DALL·E 2023-10-24 22.04.16 - Pixel art depiction on an obsidian black canvas. A radiant green question mark is centrally located, undergoing a vibrant explosion, with pixelated en.png" id="2_6ppx4"]
+[ext_resource type="Texture2D" uid="uid://dcfw0yv6b2w6i" path="res://images/avatars/narrador.png" id="3_kqm0d"]
+[ext_resource type="AudioStream" uid="uid://bq6vwiy8fsumg" path="res://audio/effects/meowing_cat.mp3" id="4_q24s8"]
+[ext_resource type="AudioStream" uid="uid://b0dps0rypysmu" path="res://audio/effects/vgmenuhighlight.wav" id="5_j4qu7"]
+[ext_resource type="Texture2D" uid="uid://ca4fn0qwhtbjv" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.41.22 - Pixel art illustration reminiscent of 90s adventure games, showcasing a top body avatar of a Comic-Con attendee dressed as a character resembling a mo.png" id="6_te23s"]
+[ext_resource type="Texture2D" uid="uid://ccphl3pax2u0t" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.45.11 - Pixel art illustration reminiscent of 90s adventure games, showcasing an avatar of a Comic-Con attendee dressed as a character resembling a dark vigil.png" id="7_as26l"]
+[ext_resource type="Texture2D" uid="uid://bii54f7uurog2" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.06.32 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con con un aspecto parecido a un luchador de.png" id="8_3f2wu"]
+[ext_resource type="Texture2D" uid="uid://bn6rn5u58qipd" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 23.49.22 - Pixel art reminiscent of 90s video games, capturing a confident male Comic-Con participant in a furry-themed costume. He proudly shows off his intrica.png" id="9_0xi16"]
+[ext_resource type="Script" path="res://scenes/common_character_button.gd" id="9_w14hu"]
+[ext_resource type="Texture2D" uid="uid://b82e3gm4whq5w" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.23.14 - Pixel art in the style of 90s adventure games, portraying a close-up of a confident male Comic-Con attendee dressed as an alien. He confidently showca.png" id="10_efclf"]
+[ext_resource type="Texture2D" uid="uid://ck66kof2x0l05" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.41.32 - Pixel art depiction in the vein of 90s video games, featuring a top body avatar of a Comic-Con enthusiast dressed in a costume reminiscent of a charac.png" id="11_yckl0"]
+[ext_resource type="Texture2D" uid="uid://dsmk4gdkl0mao" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.47.51 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con vestido como un personaje que recuerda al fam.png" id="12_dsjbn"]
+[ext_resource type="Texture2D" uid="uid://yq3egfvxrd61" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.06.37 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con con un aire similar a un maestro de artes osc.png" id="13_6b2vm"]
+[ext_resource type="Texture2D" uid="uid://gjvelvpgrdai" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.07.35 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con con un aspecto parecido a un elegido que.png" id="14_dgb64"]
+[ext_resource type="Texture2D" uid="uid://nqe8s7o41m8t" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.47.54 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con que lleva un disfraz que evoca a un protector ci.png" id="14_wy82q"]
+[ext_resource type="Texture2D" uid="uid://bueca14npv6lh" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.51.34 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con una camiseta de tirantes blanca, evocando a .png" id="15_lr4wy"]
+[ext_resource type="Texture2D" uid="uid://bd07um6whvnrs" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.49.05 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como un cazador de entidades .png" id="16_mybnb"]
+[ext_resource type="Texture2D" uid="uid://bb70un2emsc24" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.50.07 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con vestido como un icónico protagonista de un th.png" id="18_38ig1"]
+[ext_resource type="Texture2D" uid="uid://clrvnbtlm2obq" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.22.31 - Pixel art reminiscent of 90s video games, capturing a male Comic-Con participant dressed in a detailed alien-themed costume. He exudes confidence, sho.png" id="18_afto6"]
+[ext_resource type="Texture2D" uid="uid://bdrrpit6d2j18" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.50.11 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como un héroe de acción de un.png" id="20_hpm0i"]
+[ext_resource type="Texture2D" uid="uid://dtc4fmn6qdp8y" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.37.04 - Pixel art in the style of 90s adventure games, showcasing a close-up portrait of a confident male Comic-Con attendee dressed in a costume inspired by .png" id="20_somu2"]
+[ext_resource type="Texture2D" uid="uid://cmq16musvwwi2" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.52.41 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como una de las famosas tortu.png" id="21_yagf2"]
+[ext_resource type="Texture2D" uid="uid://bvowrol2tgcy" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.51.38 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con vestido con una camiseta de tirantes blanca, .png" id="23_hljkj"]
+[ext_resource type="Texture2D" uid="uid://bxocg3nxmlct7" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.06.40 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un aspecto que recuerda a un combatiente de .png" id="23_jwark"]
+[ext_resource type="Texture2D" uid="uid://d3vvrnrgrxkgh" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.07.39 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con que evoca a un rebelde del ciberespacio con g.png" id="24_co1ki"]
+[ext_resource type="Texture2D" uid="uid://bwju3yoa2ppui" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.51.40 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como un héroe de acción con c.png" id="25_f0m8o"]
+[ext_resource type="Texture2D" uid="uid://bsymfr8yw0i6t" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.21.51 - Pixel art reminiscent of 90s video games, capturing a male Comic-Con participant dressed in a detailed astronaut-themed costume. He exudes confidence,.png" id="26_yqay5"]
+[ext_resource type="Texture2D" uid="uid://dx08jhm6wds2p" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 00.28.35 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un disfraz que evoca a un célebre antagonist.png" id="28_e7xx2"]
+[ext_resource type="Texture2D" uid="uid://bgg8b2t6whey4" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.23.48 - Pixel art inspired by 90s adventure games, showcasing a close-up portrait of a confident male Comic-Con attendee in a princess costume. He proudly dis.png" id="28_unffe"]
+[ext_resource type="Texture2D" uid="uid://busr7k2eul0no" path="res://images/quienesquien2/nuevas/_df82580b-aa0b-47fa-b73e-21ac67bd5f97-removebg-preview.png" id="29_34ck4"]
+[ext_resource type="Texture2D" uid="uid://dwu1fx23xo8x0" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 00.35.38 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con vestido como un valiente guerrero de una tier.png" id="29_ll2t7"]
+[ext_resource type="Texture2D" uid="uid://cfeaed1qc558i" path="res://images/quienesquien2/_3facc90c-89ee-454b-bc9d-4e1fd59f3230.jpg" id="30_ynb7c"]
+[ext_resource type="Texture2D" uid="uid://dn6ogdo6p7snx" path="res://images/quienesquien2/_15f929ce-a1b8-49fc-870a-8bd71d38022e.jpg" id="31_vhwo3"]
+[ext_resource type="Texture2D" uid="uid://c1ks5xoh0fgfh" path="res://images/quienesquien2/_42c41b9d-921b-4332-8d02-c1154897c25f.jpg" id="32_354xj"]
+[ext_resource type="Texture2D" uid="uid://daxo1luchqcgk" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 00.26.48 - Representación en pixel art al estilo de los juegos retro de los 90, con un enfoque en el rostro y parte superior de un asistente de Comic-Con vestido.png" id="32_kx2i3"]
+[ext_resource type="Texture2D" uid="uid://casd8pn86gii1" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.49.50 - Pixel art reminiscent of 90s video games, featuring a male Comic-Con goer dressed as an orc. The man beams with pride, highlighting the intricate deta.png" id="32_mkrar"]
+[ext_resource type="Texture2D" uid="uid://bedxofosdeswk" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 22.59.33 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de una asistente femenina de Comic-Con con un disfraz que recuerda a .png" id="33_bgqae"]
+[ext_resource type="Texture2D" uid="uid://cpqp4qfmfmlct" path="res://images/quienesquien2/_c5567927-1ad1-428e-8205-218c0465689d.jpg" id="33_c0dh5"]
+[ext_resource type="Texture2D" uid="uid://ckxlb0of8v0nq" path="res://images/quienesquien2/_e717d875-dfac-4c52-a975-899a9537f2bd.jpg" id="34_h7tsq"]
+[ext_resource type="Texture2D" uid="uid://dnc4228j2ard5" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.21.02 - Pixel art inspired by 90s adventure games, featuring a close-up portrait of a confident male Comic-Con attendee in a samurai costume. He proudly displ.png" id="35_18yi5"]
+[ext_resource type="Texture2D" uid="uid://f8cfxqtcs7qq" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 23.45.54 - Pixel art reminiscent of 90s video games, capturing a male Comic-Con participant in a detailed furry-themed costume. He exudes confidence and pride in.png" id="36_tbfhb"]
+[ext_resource type="Texture2D" uid="uid://bogp4oveag2rq" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 00.26.53 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un disfraz que evoca a un famoso ninja con a.png" id="36_vuyw4"]
+[ext_resource type="Texture2D" uid="uid://bwjrdn3nt5gxx" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.07.41 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un aspecto que recuerda a un héroe que desaf.png" id="37_migtm"]
+[ext_resource type="Texture2D" uid="uid://b1pe36ah447bf" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.52.44 - Representación en pixel art al estilo de los juegos retro de los 90, con un enfoque en el rostro y parte superior de un asistente de Comic-Con vestido.png" id="37_sb7pr"]
+[ext_resource type="Texture2D" uid="uid://dum4t55xxvj1w" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-26 23.52.46 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un disfraz que evoca a una tortuga ninja de .png" id="38_rpdyr"]
+[ext_resource type="Texture2D" uid="uid://dhrjo0iulpb7l" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 00.28.50 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como un payaso príncipe del c.png" id="39_5nfrk"]
+[ext_resource type="Texture2D" uid="uid://bceyudalqpy1q" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 00.59.53 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con con un aspecto parecido a un héroe elfo .png" id="40_rchs4"]
+[ext_resource type="Texture2D" uid="uid://s0runxi5w36u" path="res://images/quienesquien2/_78a190c4-9ec2-4fb6-9c96-245a62127051.jpg" id="41_88ej7"]
+[ext_resource type="Texture2D" uid="uid://dnxi1usc4no61" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.02.05 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un aspecto que recuerda a un icónico persona.png" id="42_klrwu"]
+[ext_resource type="Texture2D" uid="uid://dpui61c27j3yi" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.21.47 - Pixel art inspired by 90s adventure games, showcasing a close-up portrait of a confident male Comic-Con attendee in an astronaut costume. He proudly d.png" id="42_mfc36"]
+[ext_resource type="Texture2D" uid="uid://yftn8ocatokq" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.49.46 - Pixel art in the style of 90s adventure games, showcasing a close-up portrait of a male Comic-Con attendee wearing an orc-inspired costume. The charac.png" id="44_byqj3"]
+[ext_resource type="Texture2D" uid="uid://rlb4nyeobyal" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.02.16 - Representación en pixel art al estilo de los juegos retro de los 90, con un enfoque en el rostro y parte superior de un asistente de Comic-Con con una.png" id="49_ocgay"]
+[ext_resource type="Texture2D" uid="uid://b6q07g01v8vfh" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.23.52 - Pixel art reminiscent of 90s video games, capturing a male Comic-Con participant dressed in a detailed princess-themed costume. Radiating confidence, .png" id="51_4whqk"]
+[ext_resource type="Texture2D" uid="uid://bvigt1bqu1nuw" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.04.02 - Representación en pixel art al estilo de juegos clásicos de los 90, mostrando un retrato de un asistente de Comic-Con con atuendo y armamento que evoc.png" id="51_6qs4q"]
+[ext_resource type="Texture2D" uid="uid://btsrp4dhq3dqx" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 23.03.39 - Pixel art inspired by 90s adventure games, featuring a close-up portrait of a confident female Comic-Con attendee wearing an anime-style costume. She .png" id="53_3gtq0"]
+[ext_resource type="Texture2D" uid="uid://dwmrhaqc16ldc" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.47.55 - Pixel art inspired by 90s adventure games, portraying a close-up of a self-assured male Comic-Con attendee dressed in a costume that evokes the image .png" id="55_mpbo1"]
+[ext_resource type="Texture2D" uid="uid://cxci0ba0vx7me" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.05.13 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un aspecto que recuerda a un famoso combatie.png" id="56_7rldr"]
+[ext_resource type="Texture2D" uid="uid://r1u12ivkmqxw" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 03.21.12 - Pixel art in the style of 90s adventure games, illustrating a close-up portrait of a male Comic-Con attendee adorned in a vampire-inspired costume. Th.png" id="56_uqvj4"]
+[ext_resource type="Texture2D" uid="uid://bqc32t6aqyixx" path="res://images/quienesquien2/nuevas/_d6f3f3ba-2761-43bd-95f9-90d75da2bc4a-removebg-preview.png" id="58_4rhxn"]
+[ext_resource type="Texture2D" uid="uid://clt8j58h02442" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 01.05.10 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con con un aspecto parecido a un luchador de.png" id="58_ees3l"]
+[ext_resource type="Texture2D" uid="uid://bq6oin4ehld2j" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.24.27 - Pixel art in the style of 90s adventure games, portraying a close-up of a self-assured male Comic-Con attendee dressed as an alien. He confidently dis.png" id="60_4ys0v"]
+[ext_resource type="Texture2D" uid="uid://df68hrjqm87ki" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.50.32 - Pixel art in the style of 90s adventure games, showcasing a close-up portrait of a male Comic-Con attendee wearing an elf-inspired costume. The charac.png" id="62_cjj7k"]
+[ext_resource type="Texture2D" uid="uid://ls8lg3kuhgwn" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.23.19 - Pixel art reminiscent of 90s video games, capturing a male Comic-Con participant in an intricate alien-themed costume. Radiating confidence, he displa.png" id="63_pcp8g"]
+[ext_resource type="Texture2D" uid="uid://bb4ath1afll5u" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.25.05 - Pixel art inspired by 90s adventure games, showcasing a close-up portrait of a confident female Comic-Con attendee in a princess costume. She proudly .png" id="64_16wc8"]
+[ext_resource type="Texture2D" uid="uid://bf5so42if2bb" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-28 00.26.00 - Pixel art reminiscent of 90s video games, capturing a blonde-haired female Comic-Con participant dressed in a detailed pink princess-themed costume. R.png" id="65_nl5sf"]
+[ext_resource type="Texture2D" uid="uid://kls1gqi6jwy3" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 23.49.18 - Pixel art in the style of 90s adventure games, showcasing a close-up portrait of a self-assured male Comic-Con attendee dressed in a furry costume. He.png" id="66_u5p3a"]
+[ext_resource type="Texture2D" uid="uid://dijmnrdob78wu" path="res://images/quienesquien2/nuevas/DALL·E 2023-10-27 23.47.25 - Pixel art reminiscent of 90s video games, capturing a male Comic-Con participant dressed in a detailed Halloween-themed costume. He exudes confidence,.png" id="67_dv2qn"]
+[ext_resource type="Script" path="res://scenes/Buttonquienesquien.gd" id="69_rhluj"]
+
+[node name="Miniquienesquien" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jw25u")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_xis0f")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -388.0
+offset_top = -384.0
+offset_right = 636.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("2_6ppx4")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(2.365, 4.32)
+layout_mode = 0
+offset_left = 290.935
+offset_top = 592.28
+offset_right = 887.4
+offset_bottom = 763.225
+
+[node name="TextureRect4" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = -167.165
+offset_top = 1.165
+offset_right = 856.835
+offset_bottom = 1025.17
+scale = Vector2(0.166, 0.164826)
+texture = ExtResource("3_kqm0d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 25.0
+offset_right = 550.0
+offset_bottom = 150.0
+text = "¡Ah, Madrid! 
+Donde las tapas son gratis y los atascos eternos. 
+Desde que comenzó la pandemia, nuestro prota no ha salido mucho. "
+
+[node name="mm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_q24s8")
+
+[node name="action" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_j4qu7")
+volume_db = 10.435
+
+[node name="Buttonquienesquien" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1023.0
+offset_bottom = 769.0
+script = ExtResource("69_rhluj")
+
+[node name="ContenedorDeTarjetas" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="char1L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 149.99
+offset_top = 24.95
+offset_right = 1173.99
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("6_te23s")
+script = ExtResource("9_w14hu")
+
+[node name="char2L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 229.24
+offset_top = 24.95
+offset_right = 1253.24
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("7_as26l")
+
+[node name="char3L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 308.475
+offset_top = 24.95
+offset_right = 1332.47
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("8_3f2wu")
+
+[node name="char4L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 387.89
+offset_top = 24.95
+offset_right = 1411.89
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("9_0xi16")
+
+[node name="char5L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 463.885
+offset_top = 24.95
+offset_right = 1487.89
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("10_efclf")
+
+[node name="char6L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 546.34
+offset_top = 24.95
+offset_right = 1570.34
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("11_yckl0")
+
+[node name="char7L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 631.275
+offset_top = 24.95
+offset_right = 1655.28
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("12_dsjbn")
+
+[node name="char8L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 710.32
+offset_top = 24.95
+offset_right = 1734.32
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("13_6b2vm")
+
+[node name="char9L1" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 793.29
+offset_top = 24.95
+offset_right = 1817.29
+offset_bottom = 1048.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("14_dgb64")
+
+[node name="char1L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 149.99
+offset_top = 106.95
+offset_right = 1173.99
+offset_bottom = 1130.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("14_wy82q")
+
+[node name="char2L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 229.24
+offset_top = 106.95
+offset_right = 1253.24
+offset_bottom = 1130.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("15_lr4wy")
+
+[node name="char3L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 308.475
+offset_top = 106.95
+offset_right = 1332.47
+offset_bottom = 1130.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("16_mybnb")
+
+[node name="char4L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 387.89
+offset_top = 106.95
+offset_right = 1411.89
+offset_bottom = 1130.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("18_afto6")
+
+[node name="char5L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 463.885
+offset_top = 106.95
+offset_right = 1487.89
+offset_bottom = 1130.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("18_38ig1")
+
+[node name="char6L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 546.34
+offset_top = 106.95
+offset_right = 1570.34
+offset_bottom = 1130.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("20_somu2")
+
+[node name="char7L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 631.275
+offset_top = 106.385
+offset_right = 1655.28
+offset_bottom = 1130.39
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("20_hpm0i")
+
+[node name="char8L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 710.32
+offset_top = 106.385
+offset_right = 1734.32
+offset_bottom = 1130.39
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("21_yagf2")
+
+[node name="char9L2" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 793.29
+offset_top = 106.385
+offset_right = 1817.29
+offset_bottom = 1130.39
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("23_jwark")
+
+[node name="char1L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 149.99
+offset_top = 191.48
+offset_right = 1173.99
+offset_bottom = 1215.48
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("24_co1ki")
+
+[node name="char2L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 229.24
+offset_top = 191.48
+offset_right = 1253.24
+offset_bottom = 1215.48
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("23_hljkj")
+
+[node name="char3L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 308.475
+offset_top = 191.48
+offset_right = 1332.47
+offset_bottom = 1215.48
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("26_yqay5")
+
+[node name="char4L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 387.89
+offset_top = 191.48
+offset_right = 1411.89
+offset_bottom = 1215.48
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("25_f0m8o")
+
+[node name="char5L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 463.885
+offset_top = 191.48
+offset_right = 1487.89
+offset_bottom = 1215.48
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("28_unffe")
+
+[node name="char6L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 546.34
+offset_top = 191.48
+offset_right = 1570.34
+offset_bottom = 1215.48
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("29_34ck4")
+
+[node name="char7L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 631.275
+offset_top = 192.15
+offset_right = 1655.28
+offset_bottom = 1216.15
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("28_e7xx2")
+
+[node name="char8L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 710.32
+offset_top = 192.15
+offset_right = 1734.32
+offset_bottom = 1216.15
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("29_ll2t7")
+
+[node name="char9L3" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 793.29
+offset_top = 192.15
+offset_right = 1817.29
+offset_bottom = 1216.15
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("32_mkrar")
+
+[node name="char1L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 149.99
+offset_top = 282.0
+offset_right = 1173.99
+offset_bottom = 1306.0
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("33_bgqae")
+
+[node name="char2L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 229.24
+offset_top = 282.0
+offset_right = 1253.24
+offset_bottom = 1306.0
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("32_kx2i3")
+
+[node name="char3L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 308.475
+offset_top = 282.0
+offset_right = 1332.47
+offset_bottom = 1306.0
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("35_18yi5")
+
+[node name="char4L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 387.89
+offset_top = 282.0
+offset_right = 1411.89
+offset_bottom = 1306.0
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("36_tbfhb")
+
+[node name="char5L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 463.885
+offset_top = 282.0
+offset_right = 1487.89
+offset_bottom = 1306.0
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("37_migtm")
+
+[node name="char6L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 546.34
+offset_top = 282.0
+offset_right = 1570.34
+offset_bottom = 1306.0
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("36_vuyw4")
+
+[node name="char7L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 631.275
+offset_top = 281.81
+offset_right = 1655.28
+offset_bottom = 1305.81
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("37_sb7pr")
+
+[node name="char8L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 710.32
+offset_top = 281.81
+offset_right = 1734.32
+offset_bottom = 1305.81
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("38_rpdyr")
+
+[node name="char9L4" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 793.29
+offset_top = 281.81
+offset_right = 1817.29
+offset_bottom = 1305.81
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("39_5nfrk")
+
+[node name="char1L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 149.99
+offset_top = 365.95
+offset_right = 1173.99
+offset_bottom = 1389.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("42_mfc36")
+
+[node name="char2L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 229.24
+offset_top = 365.95
+offset_right = 1253.24
+offset_bottom = 1389.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("40_rchs4")
+
+[node name="char3L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 308.475
+offset_top = 365.95
+offset_right = 1332.47
+offset_bottom = 1389.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("44_byqj3")
+
+[node name="char4L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 387.89
+offset_top = 365.95
+offset_right = 1411.89
+offset_bottom = 1389.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("42_klrwu")
+
+[node name="char5L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 463.885
+offset_top = 365.95
+offset_right = 1487.89
+offset_bottom = 1389.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("30_ynb7c")
+
+[node name="char6L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 546.34
+offset_top = 365.95
+offset_right = 1570.34
+offset_bottom = 1389.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("31_vhwo3")
+
+[node name="char7L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 631.275
+offset_top = 365.95
+offset_right = 1655.28
+offset_bottom = 1389.95
+scale = Vector2(0.0613062, 0.061)
+texture_normal = ExtResource("32_354xj")
+
+[node name="char8L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 710.32
+offset_top = 365.95
+offset_right = 1734.32
+offset_bottom = 1389.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("33_c0dh5")
+
+[node name="char9L5" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 793.29
+offset_top = 365.95
+offset_right = 1817.29
+offset_bottom = 1389.95
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("34_h7tsq")
+
+[node name="char1L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 149.99
+offset_top = 445.61
+offset_right = 1173.99
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("51_4whqk")
+
+[node name="char2L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 229.24
+offset_top = 445.61
+offset_right = 1253.24
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("49_ocgay")
+
+[node name="char3L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 308.475
+offset_top = 445.61
+offset_right = 1332.47
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("53_3gtq0")
+
+[node name="char4L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 387.89
+offset_top = 445.61
+offset_right = 1411.89
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("51_6qs4q")
+
+[node name="char5L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 463.885
+offset_top = 445.61
+offset_right = 1487.89
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("55_mpbo1")
+
+[node name="char6L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 546.34
+offset_top = 445.61
+offset_right = 1570.34
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("56_uqvj4")
+
+[node name="char7L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 631.275
+offset_top = 445.61
+offset_right = 1655.28
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("41_88ej7")
+
+[node name="char8L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 710.32
+offset_top = 445.61
+offset_right = 1734.32
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("58_4rhxn")
+
+[node name="char9L6" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 793.29
+offset_top = 445.61
+offset_right = 1817.29
+offset_bottom = 1469.61
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("56_7rldr")
+
+[node name="char1L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 149.99
+offset_top = 519.915
+offset_right = 1173.99
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("60_4ys0v")
+
+[node name="char2L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 229.24
+offset_top = 519.915
+offset_right = 1253.24
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("58_ees3l")
+
+[node name="char3L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 308.475
+offset_top = 519.915
+offset_right = 1332.47
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("62_cjj7k")
+
+[node name="char4L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 387.89
+offset_top = 519.915
+offset_right = 1411.89
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("63_pcp8g")
+
+[node name="char5L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 463.885
+offset_top = 519.915
+offset_right = 1487.89
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("64_16wc8")
+
+[node name="char6L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 546.34
+offset_top = 519.915
+offset_right = 1570.34
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("65_nl5sf")
+
+[node name="char7L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 631.275
+offset_top = 519.915
+offset_right = 1655.28
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("66_u5p3a")
+
+[node name="char8L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 710.32
+offset_top = 519.915
+offset_right = 1734.32
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("67_dv2qn")
+
+[node name="char9L7" type="TextureButton" parent="ContenedorDeTarjetas"]
+layout_mode = 0
+offset_left = 793.29
+offset_top = 519.915
+offset_right = 1817.29
+offset_bottom = 1543.92
+scale = Vector2(0.061, 0.061)
+texture_normal = ExtResource("56_uqvj4")
+
+[connection signal="button_down" from="Buttonquienesquien" to="Buttonquienesquien" method="_on_button_down"]

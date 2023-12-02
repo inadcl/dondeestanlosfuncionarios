@@ -1,0 +1,195 @@
+[gd_scene load_steps=19 format=3 uid="uid://ca6fdq4tbu0wq"]
+
+[ext_resource type="Script" path="res://scenes/level3.gd" id="1_f8khr"]
+[ext_resource type="Texture2D" uid="uid://2wnlcer58k3h" path="res://images/level3/madrid.webp" id="2_5ninq"]
+[ext_resource type="AudioStream" uid="uid://ckfwtlssy77i6" path="res://audio/music/airport_attack.ogg" id="2_mwf1d"]
+[ext_resource type="Texture2D" uid="uid://lkot1udph24a" path="res://images/level3/cafe.png" id="3_rbcr2"]
+[ext_resource type="Texture2D" uid="uid://ddq6x470o2f58" path="res://images/level3/geeks (1).png" id="4_gx0yr"]
+[ext_resource type="Texture2D" uid="uid://d1gs840j3tykc" path="res://images/level3/karaoke.webp" id="5_spaha"]
+[ext_resource type="Texture2D" uid="uid://dvgv4nlabso0m" path="res://images/level1/carta3.png" id="6_2nmtv"]
+[ext_resource type="Texture2D" uid="uid://d36r7lj5slomy" path="res://images/level1/tiempo.png" id="7_2cydc"]
+[ext_resource type="Texture2D" uid="uid://d2kbw6hie1tve" path="res://images/level3/DALL·E 2023-10-28 18.36.50 - Pixel art reminiscent of top graphic adventures from the 1990s, set in the bustling streets of Madrid during daylight. The scene is bathed in the warm.png" id="7_ydnmi"]
+[ext_resource type="Texture2D" uid="uid://c2s7ly8f8xdic" path="res://images/level3/DALL·E 2023-10-28 19.01.27 - Pixel art inspired by the top graphic adventures of the 1990s, capturing a serene scene in the streets of Madrid. The surroundings showcase historic M.png" id="8_73p7l"]
+[ext_resource type="Texture2D" uid="uid://dcfw0yv6b2w6i" path="res://images/avatars/narrador.png" id="8_ylrkv"]
+[ext_resource type="Script" path="res://scenes/Buttonlevel3.gd" id="10_urr46"]
+[ext_resource type="AudioStream" uid="uid://bq6vwiy8fsumg" path="res://audio/effects/meowing_cat.mp3" id="10_yu351"]
+[ext_resource type="AudioStream" uid="uid://b0dps0rypysmu" path="res://audio/effects/vgmenuhighlight.wav" id="11_toxvm"]
+[ext_resource type="Texture2D" uid="uid://bho1v2lbbc4in" path="res://images/level3/mapa_cafe.webp" id="12_fasql"]
+[ext_resource type="Texture2D" uid="uid://thxiasr1x3ga" path="res://images/level3/mapa_poster.webp" id="13_4j7hk"]
+[ext_resource type="Texture2D" uid="uid://dtwyqwukydv37" path="res://images/level3/mapa_karaoke.webp" id="14_11uqe"]
+[ext_resource type="Script" path="res://scenes/ButtonNarrador.gd" id="17_dykli"]
+
+[node name="level3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f8khr")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_mwf1d")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -388.0
+offset_top = -384.0
+offset_right = 636.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("2_5ninq")
+
+[node name="TextureCafe" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.0
+offset_right = 1148.0
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("3_rbcr2")
+
+[node name="TextureComiccon" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.0
+offset_right = 1148.0
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("4_gx0yr")
+
+[node name="Texturekaraoke" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.21
+offset_right = 1148.21
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("5_spaha")
+
+[node name="TextureNarrador" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.21
+offset_right = 1148.21
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("7_ydnmi")
+
+[node name="TextureCalles" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.21
+offset_right = 1148.21
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("8_73p7l")
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.21
+offset_right = 1148.21
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("6_2nmtv")
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 124.21
+offset_right = 1148.21
+offset_bottom = 1024.0
+scale = Vector2(0.745, 0.745)
+texture = ExtResource("7_2cydc")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(2.365, 4.32)
+layout_mode = 0
+offset_left = 290.935
+offset_top = 592.28
+offset_right = 887.4
+offset_bottom = 763.225
+
+[node name="TextureRect4" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = -167.165
+offset_top = 1.165
+offset_right = 856.835
+offset_bottom = 1025.17
+scale = Vector2(0.166, 0.164826)
+texture = ExtResource("8_ylrkv")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 25.0
+offset_right = 550.0
+offset_bottom = 150.0
+text = "El orden de los factores no altera el producto, asi que...
+¿donde crees que fue nuestro protagonista?"
+
+[node name="Buttonlevel3" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1024.0
+offset_bottom = 768.0
+flat = true
+script = ExtResource("10_urr46")
+
+[node name="mm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_yu351")
+
+[node name="action" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_toxvm")
+volume_db = 10.435
+
+[node name="cafe" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 125.27
+offset_top = 191.73
+offset_right = 725.27
+offset_bottom = 1215.73
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("12_fasql")
+stretch_mode = 3
+
+[node name="poster" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 43.05
+offset_right = 1300.0
+offset_bottom = 1067.05
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("13_4j7hk")
+
+[node name="premio" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 552.155
+offset_top = 100.0
+offset_right = 1152.16
+offset_bottom = 1124.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("14_11uqe")
+
+[node name="ButtonNarrador" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 122.0
+offset_right = 885.0
+offset_bottom = 767.0
+flat = true
+script = ExtResource("17_dykli")
+
+[connection signal="button_up" from="Buttonlevel3" to="Buttonlevel3" method="_on_button_up"]
+[connection signal="button_up" from="cafe" to="." method="cafe"]
+[connection signal="button_up" from="poster" to="." method="poster"]
+[connection signal="button_up" from="premio" to="." method="premio"]
+[connection signal="button_up" from="ButtonNarrador" to="ButtonNarrador" method="_on_button_up"]

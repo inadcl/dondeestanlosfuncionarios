@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://edn8xhj441la"]
+
+[ext_resource type="Texture2D" uid="uid://j474a6ybixkr" path="res://images/background/menu3.png" id="1_84ie8"]
+[ext_resource type="Script" path="res://scenes/menu.gd" id="1_mfehd"]
+[ext_resource type="Script" path="res://scenes/Button.gd" id="2_4l6nk"]
+[ext_resource type="AudioStream" uid="uid://7cvufa6jmofr" path="res://audio/music/TheAdventureBEGINS.wav" id="3_jjnbk"]
+[ext_resource type="AudioStream" uid="uid://b0dps0rypysmu" path="res://audio/effects/vgmenuhighlight.wav" id="4_6vqig"]
+[ext_resource type="PackedScene" uid="uid://bxod21vhp6sjl" path="res://scenes/level1.tscn" id="5_kscfv"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_mfehd")
+
+[node name="Menu3" type="Sprite2D" parent="."]
+position = Vector2(572.5, 325.5)
+scale = Vector2(0.62793, 0.62793)
+texture = ExtResource("1_84ie8")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 472.0
+offset_top = 475.0
+offset_right = 685.0
+offset_bottom = 570.0
+script = ExtResource("2_4l6nk")
+
+[node name="audioclick" type="AudioStreamPlayer2D" parent="Button"]
+position = Vector2(-472, -475)
+stream = ExtResource("4_6vqig")
+
+[node name="level1" parent="Button" instance=ExtResource("5_kscfv")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_jjnbk")
+autoplay = true
+
+[connection signal="button_up" from="Button" to="Button" method="_on_button_up"]

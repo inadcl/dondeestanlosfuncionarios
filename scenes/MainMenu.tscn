@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://xx3u7k40hnl6"]
+
+[ext_resource type="Script" path="res://scenes/menu.gd" id="1_1wbbs"]
+[ext_resource type="Texture2D" uid="uid://j474a6ybixkr" path="res://images/menu/menu3.png" id="2_n5buc"]
+[ext_resource type="Script" path="res://scenes/Button.gd" id="3_2h3n5"]
+[ext_resource type="AudioStream" uid="uid://b0dps0rypysmu" path="res://audio/effects/vgmenuhighlight.wav" id="3_df7th"]
+[ext_resource type="Texture2D" uid="uid://do4xo47wfduc" path="res://images/menu/start1.png" id="3_dg3dx"]
+[ext_resource type="AudioStream" uid="uid://7cvufa6jmofr" path="res://audio/music/TheAdventureBEGINS.wav" id="4_40iv6"]
+[ext_resource type="Texture2D" uid="uid://bv0210se15pe4" path="res://images/menu/start2.png" id="4_a17tp"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.893)
+size_flags_horizontal = 6
+size_flags_vertical = 6
+script = ExtResource("1_1wbbs")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 90.0
+offset_right = 1114.0
+offset_bottom = 1024.0
+scale = Vector2(0.835, 0.835)
+texture = ExtResource("2_n5buc")
+stretch_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -139.8
+offset_top = -155.56
+offset_right = 225.2
+offset_bottom = 8.44
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.84561, 0.865509)
+texture_normal = ExtResource("3_dg3dx")
+texture_pressed = ExtResource("4_a17tp")
+script = ExtResource("3_2h3n5")
+
+[node name="audioclick" type="AudioStreamPlayer2D" parent="TextureButton"]
+position = Vector2(-248.08, -623.548)
+scale = Vector2(0.840894, 0.849314)
+stream = ExtResource("3_df7th")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_40iv6")
+autoplay = true
+
+[connection signal="button_down" from="TextureButton" to="TextureButton" method="_on_button_down"]
+[connection signal="button_up" from="TextureButton" to="TextureButton" method="_on_button_up"]
