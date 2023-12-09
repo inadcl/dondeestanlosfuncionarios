@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://k46oxuvaj6mt"]
+[gd_scene load_steps=115 format=3 uid="uid://k46oxuvaj6mt"]
 
 [ext_resource type="Script" path="res://scenes/Miniquienesquien.gd" id="1_jw25u"]
 [ext_resource type="AudioStream" uid="uid://7cvufa6jmofr" path="res://audio/music/TheAdventureBEGINS.wav" id="1_xis0f"]
@@ -10,12 +10,19 @@
 [ext_resource type="AudioStream" uid="uid://b7ysqk1dmaqx4" path="res://sonidos/quienesquien/jugador/adivinanzas.mp3" id="8_yv77a"]
 [ext_resource type="AudioStream" uid="uid://bgmwq2xetde3e" path="res://sonidos/quienesquien/narrador/nofuncionarios.mp3" id="9_uh2lu"]
 [ext_resource type="AudioStream" uid="uid://cu5oifdwp8xgh" path="res://sonidos/quienesquien/narrador/envidiadas.mp3" id="10_7l0oj"]
+[ext_resource type="AudioStream" uid="uid://btcye362kjmp" path="res://sonidos/quienesquien/jugador/soloquedauno.mp3" id="10_8muea"]
+[ext_resource type="AudioStream" uid="uid://dvrgohqsyyipd" path="res://sonidos/quienesquien/jugador/perdona.mp3" id="11_hfeqy"]
 [ext_resource type="AudioStream" uid="uid://cccknsmgvon48" path="res://sonidos/quienesquien/narrador/no.mp3" id="11_px3sy"]
 [ext_resource type="AudioStream" uid="uid://cd2x5jq672opi" path="res://sonidos/quienesquien/narrador/wally.mp3" id="11_v8sbt"]
+[ext_resource type="AudioStream" uid="uid://4c6qycoioeql" path="res://sonidos/quienesquien/jugador/citaprevia.mp3" id="12_5usej"]
 [ext_resource type="AudioStream" uid="uid://baf8nvlreguk8" path="res://sonidos/quienesquien/narrador/menos.mp3" id="12_nbs8t"]
 [ext_resource type="AudioStream" uid="uid://dwnge1uorvst6" path="res://sonidos/quienesquien/narrador/princesaseliminadas.mp3" id="13_4mcn4"]
+[ext_resource type="AudioStream" uid="uid://ctf2umltd6xy7" path="res://sonidos/quienesquien/jugador/fuerzapuno.mp3" id="13_i4u1l"]
 [ext_resource type="AudioStream" uid="uid://b8ncamqthow3c" path="res://sonidos/quienesquien/narrador/descartamos.mp3" id="13_pkpo5"]
+[ext_resource type="AudioStream" uid="uid://lxq2lny046s1" path="res://sonidos/quienesquien/funcionario/ciapreviafunci.mp3" id="14_08ike"]
+[ext_resource type="AudioStream" uid="uid://brlhbbpcadakp" path="res://sonidos/quienesquien/funcionario/nopuedohacernada.mp3" id="14_argyw"]
 [ext_resource type="AudioStream" uid="uid://bx6rhb50r7abt" path="res://sonidos/quienesquien/narrador/elfosmenos.mp3" id="14_t5yqf"]
+[ext_resource type="AudioStream" uid="uid://3u51rh4kel3f" path="res://sonidos/quienesquien/funcionario/pista1.mp3" id="15_45ccx"]
 [ext_resource type="AudioStream" uid="uid://cvdtvbhc4o624" path="res://sonidos/quienesquien/narrador/ninjas.mp3" id="15_amfkg"]
 [ext_resource type="AudioStream" uid="uid://ol1fi1ka6eqf" path="res://sonidos/quienesquien/narrador/ninjasfuera.mp3" id="17_aa1bm"]
 [ext_resource type="AudioStream" uid="uid://bwy3iw6cunpv1" path="res://sonidos/quienesquien/narrador/harrypoters.mp3" id="18_kaor8"]
@@ -28,15 +35,27 @@
 [ext_resource type="AudioStream" uid="uid://dbrn2ob5yegpr" path="res://sonidos/quienesquien/narrador/menosneo.mp3" id="25_vla71"]
 [ext_resource type="AudioStream" uid="uid://bnmncimug0wv3" path="res://sonidos/quienesquien/narrador/matrix4malisima.mp3" id="26_pcpjp"]
 [ext_resource type="AudioStream" uid="uid://dr1bokwy6gk4w" path="res://sonidos/quienesquien/narrador/parecehumano.mp3" id="27_qaial"]
+[ext_resource type="AudioStream" uid="uid://b31lp8olu211a" path="res://sonidos/quienesquien/narrador/quedanpocos.mp3" id="28_auys7"]
+[ext_resource type="AudioStream" uid="uid://bbsiewa78t6o8" path="res://sonidos/quienesquien/jugador/atmsofera.mp3" id="29_jwg5m"]
 [ext_resource type="Texture2D" uid="uid://ca4fn0qwhtbjv" path="res://images/qeq/n/DALL·E 2023-10-26 23.41.22 - Pixel art illustration reminiscent of 90s adventure games, showcasing a top body avatar of a Comic-Con attendee dressed as a character resembling a mo.png" id="30_hmvve"]
+[ext_resource type="AudioStream" uid="uid://1yyftcpfxkpn" path="res://sonidos/quienesquien/narrador/cazafantasmas.mp3" id="30_pp6mp"]
 [ext_resource type="Texture2D" uid="uid://ccphl3pax2u0t" path="res://images/qeq/n/DALL·E 2023-10-26 23.45.11 - Pixel art illustration reminiscent of 90s adventure games, showcasing an avatar of a Comic-Con attendee dressed as a character resembling a dark vigil.png" id="31_1y57d"]
+[ext_resource type="AudioStream" uid="uid://b2o4u5o7yflst" path="res://sonidos/quienesquien/narrador/mensocazafantasmas.mp3" id="31_qj6ra"]
+[ext_resource type="AudioStream" uid="uid://88xbnsje7eu5" path="res://sonidos/quienesquien/jugador/rober.mp3" id="32_4n7r4"]
 [ext_resource type="Texture2D" uid="uid://bii54f7uurog2" path="res://images/qeq/n/DALL·E 2023-10-27 01.06.32 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con con un aspecto parecido a un luchador de.png" id="32_kbndr"]
+[ext_resource type="AudioStream" uid="uid://qi6s0r2nyglx" path="res://sonidos/quienesquien/narrador/replimenoscazafantasmas.mp3" id="33_qcd42"]
 [ext_resource type="Texture2D" uid="uid://bn6rn5u58qipd" path="res://images/qeq/n/DALL·E 2023-10-27 23.49.22 - Pixel art reminiscent of 90s video games, capturing a confident male Comic-Con participant in a furry-themed costume. He proudly shows off his intrica.png" id="33_rqiqd"]
+[ext_resource type="AudioStream" uid="uid://bl84wlwexxgpc" path="res://sonidos/quienesquien/narrador/nomasvampiros.mp3" id="34_fat2m"]
 [ext_resource type="Texture2D" uid="uid://b82e3gm4whq5w" path="res://images/qeq/n/DALL·E 2023-10-28 00.23.14 - Pixel art in the style of 90s adventure games, portraying a close-up of a confident male Comic-Con attendee dressed as an alien. He confidently showca.png" id="34_nurou"]
+[ext_resource type="AudioStream" uid="uid://daaouxod51k2b" path="res://sonidos/quienesquien/jugador/miex.mp3" id="34_qbc4f"]
 [ext_resource type="Texture2D" uid="uid://ck66kof2x0l05" path="res://images/qeq/n/DALL·E 2023-10-26 23.41.32 - Pixel art depiction in the vein of 90s video games, featuring a top body avatar of a Comic-Con enthusiast dressed in a costume reminiscent of a charac.png" id="35_mbj7p"]
+[ext_resource type="AudioStream" uid="uid://clwwi5lvrx6n1" path="res://sonidos/quienesquien/narrador/bender.mp3" id="35_xtnl8"]
+[ext_resource type="AudioStream" uid="uid://5lpo4fnmm152" path="res://sonidos/quienesquien/narrador/besamiculo.mp3" id="36_34ykk"]
 [ext_resource type="Texture2D" uid="uid://dsmk4gdkl0mao" path="res://images/qeq/n/DALL·E 2023-10-26 23.47.51 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con vestido como un personaje que recuerda al fam.png" id="36_l2atc"]
 [ext_resource type="Texture2D" uid="uid://yq3egfvxrd61" path="res://images/qeq/n/DALL·E 2023-10-27 01.06.37 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con con un aire similar a un maestro de artes osc.png" id="37_7stut"]
+[ext_resource type="AudioStream" uid="uid://gi301sqna53t" path="res://sonidos/quienesquien/jugador/propiopais.mp3" id="37_ddjb8"]
 [ext_resource type="Texture2D" uid="uid://gjvelvpgrdai" path="res://images/qeq/n/DALL·E 2023-10-27 01.07.35 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con con un aspecto parecido a un elegido que.png" id="38_067x5"]
+[ext_resource type="AudioStream" uid="uid://cu1wb67g8eps" path="res://sonidos/quienesquien/narrador/procesion.mp3" id="39_87pyg"]
 [ext_resource type="Texture2D" uid="uid://nqe8s7o41m8t" path="res://images/qeq/n/DALL·E 2023-10-26 23.47.54 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con que lleva un disfraz que evoca a un protector ci.png" id="39_kxx6r"]
 [ext_resource type="Texture2D" uid="uid://bueca14npv6lh" path="res://images/qeq/n/DALL·E 2023-10-26 23.51.34 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con una camiseta de tirantes blanca, evocando a .png" id="40_ycfst"]
 [ext_resource type="Texture2D" uid="uid://bd07um6whvnrs" path="res://images/qeq/n/DALL·E 2023-10-26 23.49.05 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como un cazador de entidades .png" id="41_8j8to"]
@@ -44,14 +63,15 @@
 [ext_resource type="Texture2D" uid="uid://bb70un2emsc24" path="res://images/qeq/n/DALL·E 2023-10-26 23.50.07 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con vestido como un icónico protagonista de un th.png" id="43_5umjp"]
 [ext_resource type="Texture2D" uid="uid://dtc4fmn6qdp8y" path="res://images/qeq/n/DALL·E 2023-10-28 00.37.04 - Pixel art in the style of 90s adventure games, showcasing a close-up portrait of a confident male Comic-Con attendee dressed in a costume inspired by .png" id="44_bt77e"]
 [ext_resource type="Texture2D" uid="uid://bdrrpit6d2j18" path="res://images/qeq/n/DALL·E 2023-10-26 23.50.11 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como un héroe de acción de un.png" id="45_vfb8x"]
+[ext_resource type="AudioStream" uid="uid://cdlpvc78haojc" path="res://sonidos/quienesquien/narrador/adelante.mp3" id="46_jvx6v"]
 [ext_resource type="Texture2D" uid="uid://cmq16musvwwi2" path="res://images/qeq/n/DALL·E 2023-10-26 23.52.41 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como una de las famosas tortu.png" id="46_rmc4a"]
 [ext_resource type="Texture2D" uid="uid://bxocg3nxmlct7" path="res://images/qeq/n/DALL·E 2023-10-27 01.06.40 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un aspecto que recuerda a un combatiente de .png" id="47_pohpn"]
 [ext_resource type="Texture2D" uid="uid://d3vvrnrgrxkgh" path="res://images/qeq/n/DALL·E 2023-10-27 01.07.39 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con que evoca a un rebelde del ciberespacio con g.png" id="48_34fjj"]
 [ext_resource type="Texture2D" uid="uid://bvowrol2tgcy" path="res://images/qeq/n/DALL·E 2023-10-26 23.51.38 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con vestido con una camiseta de tirantes blanca, .png" id="49_ug4lq"]
-[ext_resource type="Texture2D" uid="uid://bsymfr8yw0i6t" path="res://images/qeq/n/DALL·E 2023-10-28 00.21.51 - Pixel art reminiscent of 90s video games, capturing a male Comic-Con participant dressed in a detailed astronaut-themed costume. He exudes confidence,.png" id="50_sq8l4"]
+[ext_resource type="Texture2D" uid="uid://b214qdg76dpwr" path="res://images/qeq/n/avatars-juego (4).png" id="50_7jvqf"]
 [ext_resource type="Texture2D" uid="uid://bwju3yoa2ppui" path="res://images/qeq/n/DALL·E 2023-10-26 23.51.40 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como un héroe de acción con c.png" id="51_ktug8"]
 [ext_resource type="Texture2D" uid="uid://bgg8b2t6whey4" path="res://images/qeq/n/DALL·E 2023-10-28 00.23.48 - Pixel art inspired by 90s adventure games, showcasing a close-up portrait of a confident male Comic-Con attendee in a princess costume. He proudly dis.png" id="52_jksxw"]
-[ext_resource type="Texture2D" uid="uid://busr7k2eul0no" path="res://images/qeq/n/_df82580b-aa0b-47fa-b73e-21ac67bd5f97-removebg-preview.png" id="53_11yi5"]
+[ext_resource type="Texture2D" uid="uid://cjiiisjf1bfke" path="res://images/qeq/n/avatars-juego (5).png" id="53_25y7t"]
 [ext_resource type="Texture2D" uid="uid://dx08jhm6wds2p" path="res://images/qeq/n/DALL·E 2023-10-27 00.28.35 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un disfraz que evoca a un célebre antagonist.png" id="54_j6ckn"]
 [ext_resource type="Texture2D" uid="uid://dwu1fx23xo8x0" path="res://images/qeq/n/DALL·E 2023-10-27 00.35.38 - Pixel art al estilo de los videojuegos de los 90, mostrando un primer plano de un asistente de Comic-Con vestido como un valiente guerrero de una tier.png" id="55_dtjna"]
 [ext_resource type="Texture2D" uid="uid://casd8pn86gii1" path="res://images/qeq/n/DALL·E 2023-10-28 00.49.50 - Pixel art reminiscent of 90s video games, featuring a male Comic-Con goer dressed as an orc. The man beams with pride, highlighting the intricate deta.png" id="56_kypqu"]
@@ -64,7 +84,7 @@
 [ext_resource type="Texture2D" uid="uid://b1pe36ah447bf" path="res://images/qeq/n/DALL·E 2023-10-26 23.52.44 - Representación en pixel art al estilo de los juegos retro de los 90, con un enfoque en el rostro y parte superior de un asistente de Comic-Con vestido.png" id="63_gkb62"]
 [ext_resource type="Texture2D" uid="uid://dum4t55xxvj1w" path="res://images/qeq/n/DALL·E 2023-10-26 23.52.46 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un disfraz que evoca a una tortuga ninja de .png" id="64_nu7ac"]
 [ext_resource type="Texture2D" uid="uid://dhrjo0iulpb7l" path="res://images/qeq/n/DALL·E 2023-10-27 00.28.50 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con disfrazado como un payaso príncipe del c.png" id="65_kpn5g"]
-[ext_resource type="Texture2D" uid="uid://dpui61c27j3yi" path="res://images/qeq/n/DALL·E 2023-10-28 00.21.47 - Pixel art inspired by 90s adventure games, showcasing a close-up portrait of a confident male Comic-Con attendee in an astronaut costume. He proudly d.png" id="66_v3w0p"]
+[ext_resource type="Texture2D" uid="uid://chp1suj1vxl7o" path="res://images/qeq/n/avatars-juego (3).png" id="66_hpa3i"]
 [ext_resource type="Texture2D" uid="uid://bceyudalqpy1q" path="res://images/qeq/n/DALL·E 2023-10-27 00.59.53 - Pixel art en el estilo de juegos de aventura de los 90, representando un retrato de un asistente de Comic-Con con un aspecto parecido a un héroe elfo .png" id="67_elu51"]
 [ext_resource type="Texture2D" uid="uid://yftn8ocatokq" path="res://images/qeq/n/DALL·E 2023-10-28 00.49.46 - Pixel art in the style of 90s adventure games, showcasing a close-up portrait of a male Comic-Con attendee wearing an orc-inspired costume. The charac.png" id="68_pwy38"]
 [ext_resource type="Texture2D" uid="uid://dnxi1usc4no61" path="res://images/qeq/n/DALL·E 2023-10-27 01.02.05 - Ilustración pixelada inspirada en juegos de los 90, mostrando el retrato de un asistente de Comic-Con con un aspecto que recuerda a un icónico persona.png" id="69_13xjt"]
@@ -91,7 +111,9 @@
 [ext_resource type="Texture2D" uid="uid://bb4ath1afll5u" path="res://images/qeq/n/DALL·E 2023-10-28 00.25.05 - Pixel art inspired by 90s adventure games, showcasing a close-up portrait of a confident female Comic-Con attendee in a princess costume. She proudly .png" id="88_ocqio"]
 [ext_resource type="Texture2D" uid="uid://bf5so42if2bb" path="res://images/qeq/n/DALL·E 2023-10-28 00.26.00 - Pixel art reminiscent of 90s video games, capturing a blonde-haired female Comic-Con participant dressed in a detailed pink princess-themed costume. R.png" id="89_1ohlb"]
 [ext_resource type="Texture2D" uid="uid://kls1gqi6jwy3" path="res://images/qeq/n/DALL·E 2023-10-27 23.49.18 - Pixel art in the style of 90s adventure games, showcasing a close-up portrait of a self-assured male Comic-Con attendee dressed in a furry costume. He.png" id="90_hirib"]
-[ext_resource type="Texture2D" uid="uid://dijmnrdob78wu" path="res://images/qeq/n/DALL·E 2023-10-27 23.47.25 - Pixel art reminiscent of 90s video games, capturing a male Comic-Con participant dressed in a detailed Halloween-themed costume. He exudes confidence,.png" id="91_fv337"]
+[ext_resource type="Texture2D" uid="uid://btv1m5qeus7qn" path="res://images/qeq/n/avatars-juego (2).png" id="91_4owqp"]
+[ext_resource type="Texture2D" uid="uid://bhb41vew6ld61" path="res://images/qeq/n/avatars-juego (1).png" id="92_vs7tq"]
+[ext_resource type="Texture2D" uid="uid://c2x0bvmogkuhd" path="res://images/ui/flecha.png" id="114_ckt5x"]
 
 [node name="Miniquienesquien" type="Control"]
 layout_mode = 3
@@ -106,6 +128,7 @@ script = ExtResource("1_jw25u")
 stream = ExtResource("1_xis0f")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -163,6 +186,34 @@ volume_db = 3.08
 
 [node name="jugador02" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("9_uh2lu")
+volume_db = 3.395
+
+[node name="jugador03" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_8muea")
+volume_db = 3.395
+
+[node name="jugador04" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_hfeqy")
+volume_db = 3.395
+
+[node name="jugador05" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_5usej")
+volume_db = 3.395
+
+[node name="jugador06" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_i4u1l")
+volume_db = 3.395
+
+[node name="funcionario01" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_08ike")
+volume_db = 3.395
+
+[node name="funcionario02" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_argyw")
+volume_db = 3.395
+
+[node name="funcionario03" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_45ccx")
 volume_db = 3.395
 
 [node name="Narrador02" type="AudioStreamPlayer2D" parent="."]
@@ -237,8 +288,56 @@ volume_db = 10.435
 stream = ExtResource("27_qaial")
 volume_db = 10.435
 
-[node name="Narrador03" type="AudioStreamPlayer2D" parent="Narrador17"]
-stream = ExtResource("13_pkpo5")
+[node name="Narrador18" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("28_auys7")
+volume_db = 10.435
+
+[node name="Narrador19" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("29_jwg5m")
+volume_db = 10.435
+
+[node name="Narrador20" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("30_pp6mp")
+volume_db = 10.435
+
+[node name="Narrador21" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("31_qj6ra")
+volume_db = 10.435
+
+[node name="Narrador22" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("32_4n7r4")
+volume_db = 10.435
+
+[node name="Narrador23" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("33_qcd42")
+volume_db = 10.435
+
+[node name="Narrador24" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("34_fat2m")
+volume_db = 10.435
+
+[node name="Narrador25" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("34_qbc4f")
+volume_db = 10.435
+
+[node name="Narrador26" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("35_xtnl8")
+volume_db = 10.435
+
+[node name="Narrador27" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("36_34ykk")
+volume_db = 10.435
+
+[node name="Narrador28" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("37_ddjb8")
+volume_db = 10.435
+
+[node name="Narrador29" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("39_87pyg")
+volume_db = 10.435
+
+[node name="Narrador30" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("46_jvx6v")
 volume_db = 10.435
 
 [node name="NarradorIni" type="AudioStreamPlayer2D" parent="."]
@@ -442,7 +541,7 @@ offset_top = 191.48
 offset_right = 1332.47
 offset_bottom = 1215.48
 scale = Vector2(0.061, 0.061)
-texture_normal = ExtResource("50_sq8l4")
+texture_normal = ExtResource("50_7jvqf")
 
 [node name="char4L3" type="TextureButton" parent="ContenedorDeTarjetas"]
 layout_mode = 0
@@ -469,7 +568,7 @@ offset_top = 191.48
 offset_right = 1570.34
 offset_bottom = 1215.48
 scale = Vector2(0.061, 0.061)
-texture_normal = ExtResource("53_11yi5")
+texture_normal = ExtResource("53_25y7t")
 
 [node name="char7L3" type="TextureButton" parent="ContenedorDeTarjetas"]
 layout_mode = 0
@@ -586,7 +685,7 @@ offset_top = 365.95
 offset_right = 1173.99
 offset_bottom = 1389.95
 scale = Vector2(0.061, 0.061)
-texture_normal = ExtResource("66_v3w0p")
+texture_normal = ExtResource("66_hpa3i")
 
 [node name="char2L5" type="TextureButton" parent="ContenedorDeTarjetas"]
 layout_mode = 0
@@ -811,7 +910,7 @@ offset_top = 519.915
 offset_right = 1734.32
 offset_bottom = 1543.92
 scale = Vector2(0.061, 0.061)
-texture_normal = ExtResource("91_fv337")
+texture_normal = ExtResource("91_4owqp")
 
 [node name="char9L7" type="TextureButton" parent="ContenedorDeTarjetas"]
 layout_mode = 0
@@ -820,7 +919,7 @@ offset_top = 519.915
 offset_right = 1817.29
 offset_bottom = 1543.92
 scale = Vector2(0.061, 0.061)
-texture_normal = ExtResource("80_vl80b")
+texture_normal = ExtResource("92_vs7tq")
 
 [node name="ImagenAmpliada" type="TextureRect" parent="."]
 layout_mode = 2
@@ -834,13 +933,28 @@ mouse_filter = 2
 [node name="narradorButton" type="Button" parent="."]
 show_behind_parent = true
 layout_mode = 0
-offset_right = 1022.0
+offset_left = -3.0
+offset_right = 1019.0
 offset_bottom = 770.0
 script = ExtResource("70_4lqxf")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 
+[node name="arrowok" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 791.0
+offset_top = 705.0
+offset_right = 1815.0
+offset_bottom = 1729.0
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("114_ckt5x")
+
+[node name="mousetimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
 [connection signal="button_down" from="Buttonquienesquien" to="Buttonquienesquien" method="_on_button_down"]
 [connection signal="button_down" from="narradorButton" to="narradorButton" method="_on_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="mousetimer" to="narradorButton" method="_on_mousetimer_timeout"]

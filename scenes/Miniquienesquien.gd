@@ -35,20 +35,14 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var current_mouse_position = get_viewport().get_mouse_position()
-	print("check")
 	if current_mouse_position != last_mouse_position:
-		print("posicion diferente")
 		is_mouse_stopped = false
 		time_since_last_move = 0.0
 		last_mouse_position = current_mouse_position
 	else:
 		time_since_last_move += delta
 		if time_since_last_move >= stop_threshold:
-			print("pinta")
 			is_mouse_stopped = true
-			# Cargar la textura desde el path
-			print(position_to_show_text)
-			print(current_mouse_position)
 			if path_de_la_textura != "" && texture_button_mouse_control.get_rect().has_point(current_mouse_position):
 				var nueva_textura = load(path_de_la_textura)
 
@@ -77,7 +71,7 @@ func _on_mouse_entered(texturebutton : TextureButton):
 
  
 
-var princesas:Array = ["char6L7","char5L7", "char5L3", "char1L6"]
+var princesas:Array = ["char6L7","char5L7", "char5L3", "char1L6", "char1L4"]
 var elfos:Array = ["char2L5","char8L3", "char6L2", "char1L1","char3L7"]
 var ninjas:Array = ["char9L6","char2L7", "char8L4", "char7L4", "char6L4", "char3L4", "char2L4", 
 "char8L2", "char8L1", "char3L1", "char9L2"]
@@ -86,9 +80,17 @@ var mcain:Array = ["char2L2","char2L3", "char5L2", "char7L2", "char4L3", "char5L
 var fantasia:Array = ["char4L1","char9L3", "char4L4", "char3L5", "char4L5", "char2L6", "char3L6", "char5L6", "char7L7"]
 var neo:Array = ["char9L1","char1L3"]
 var extraterrestres:Array = ["char1L7","char4L7","char5L1","char6L1","char4L2"]
+var spidermanmarvel:Array = ["char2L1","char5L5","char8L5","char7L6","char7L3","char9L4"]
+var cazafantasmas:Array = ["char3L2","char1L5","char8L7","char3L3","char6L3"]
+var vampiros:Array = ["char9L7","char6L6"]
+var robots:Array = ["char7L1","char1L2"]
+var funcionario:Array =["char8L6"]
 func _on_button_up():
 	var node = get_node("ImagenAmpliada")
 	node.visible = false
+	
+func _on_tree_exiting():
+	pass
 	
 	
 func check_by_level(texturebutton: TextureButton, items: Array):
@@ -128,6 +130,21 @@ func _on_button_down(texturebutton : TextureButton):
 		check_by_level(texturebutton, neo)
 	elif getLevel() == 8:
 		check_by_level(texturebutton, extraterrestres)
+	elif getLevel() == 9:
+		check_by_level(texturebutton, cazafantasmas)
+	elif getLevel() == 10:
+		check_by_level(texturebutton, vampiros)
+	elif getLevel() == 11:
+		check_by_level(texturebutton, robots)
+	elif getLevel() == 12:
+		check_by_level(texturebutton, spidermanmarvel)
+	elif getLevel() == 13:
+		check_by_level(texturebutton, funcionario)
+	elif getLevel() == 14:
+		endLevel()
+		
+func endLevel():
+	pass
 	
 	
 func _on_mouse_exit():

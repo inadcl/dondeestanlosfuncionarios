@@ -1,6 +1,5 @@
 extends Control
 
-var isNarrador : bool = false
 var selectedScene : String = ""
 var root = "/root/level3/"
 var isCafe = false
@@ -27,6 +26,8 @@ func string_time_to_seconds(time_string: String) -> int:
 	
 func _ready():
 	$AudioStreamPlayer2D.play()
+	self.vuelta()
+	
 
 
 func _on_tree_exiting():
@@ -37,6 +38,10 @@ func _process(delta):
 	pass
 	
 func vuelta():
+	
+	isPoster = GlobalVariables.vader
+	isCafe = GlobalVariables.cafe
+	isPremio = GlobalVariables.premio
 	var premio = get_node(root+"premio")
 	premio.visible = !isPremio
 	var poster = get_node(root+"poster")
@@ -70,7 +75,7 @@ func ocultarBotones():
 	
 func narrador():
 	ocultarBotones()
-	if isNarrador:
+	if GlobalVariables.isNarrador:
 		print("narrador finished")
 		var background5 = get_node(root+"TextureNarrador")
 		background5.visible = false
@@ -85,7 +90,6 @@ func narrador():
 		elif selectedScene == "premio":
 			premio()
 	else:
-		isNarrador = true
 		var background2 = get_node(root+"TextureCafe")
 		background2.visible = false
 		var background3 = get_node(root+"TextureComiccon")
@@ -113,7 +117,7 @@ func toggle_full_screen_button(value):
 func cafe():
 	selectedScene="cafe"
 	get_node("/root/level3/action").play()
-	if !isNarrador:
+	if !GlobalVariables.isNarrador:
 		narrador()
 	else:
 		toggle_full_screen_button(true)
@@ -140,7 +144,7 @@ func cafe():
 func premio():
 	selectedScene="premio"
 	get_node("/root/level3/action").play()
-	if !isNarrador:
+	if !GlobalVariables.isNarrador:
 		narrador()
 	else:
 		toggle_full_screen_button(true)
@@ -171,7 +175,7 @@ func premio():
 func poster():
 	selectedScene="poster"
 	get_node("/root/level3/action").play()
-	if !isNarrador:
+	if !GlobalVariables.isNarrador:
 		narrador()
 	else:
 		toggle_full_screen_button(true)
